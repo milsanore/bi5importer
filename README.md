@@ -1,5 +1,5 @@
 # BI5 IMPORTER
-a tool for bulk importing bi5 files into sql
+a tool for bulk importing bi5 files (tick data) into sql
 
 ## PREREQUISITES
 - `python3`
@@ -7,19 +7,17 @@ a tool for bulk importing bi5 files into sql
 - postgresql (run `make db` to get a containerised DB)
 - `pg_config`
 
-## SETUP
+## INIT
 1. copy `.env.example` to `.env`
 2. create a pg database, and configure credentials in `.env`
-3. run `make setup`
+3. run `make init`
 
 ## RUN
-1. `source .venv/bin/activate`
-2. `python bi5importer.py --path=test_data`
+`make run`
 
 ## TEST
-code coverage:
-- install the "Coverage Gutters" vscode plugin
-- run `pytest --cov=src --cov-report xml:cov.xml`
+`make test`
+and google the "Coverage Gutters" vscode plugin for a pretty ui
 
 ## INSTALL ADDITIONAL DEPENDENCIES
 1. `pip install some_new_package`

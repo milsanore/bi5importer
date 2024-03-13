@@ -12,6 +12,6 @@ LICENSE				the most important file in the app
 Makefile			the scripts that the `make` command will use, used to configure the app
 pylintrc			configuration file for the linter, pylint
 README.md			-
-requirements.txt	lists all dependencies that pip will install when we call `make setup`
+requirements.txt	lists all dependencies that pip will install when we call `make init`
 TODO.md				-
 yoyo.ini			configuration file for the database migration engine, yoyo
