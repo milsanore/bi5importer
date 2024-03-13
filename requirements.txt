@@ -1,0 +1,12 @@
+asyncpg==0.29.0
+click==8.1.7
+importlib_metadata==7.0.2
+psycopg2-binary==2.9.9
+pyfiglet==1.0.2
+python-dotenv==1.0.1
+setuptools==69.1.1
+sqlparse==0.4.4
+tabulate==0.9.0
+tqdm==4.66.2
+yoyo-migrations==8.2.0
+zipp==3.18.0

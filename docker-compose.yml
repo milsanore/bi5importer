@@ -1,0 +1,17 @@
+version: "3.6"
+
+volumes:
+  db:
+
+services:
+  db:
+    container_name: db
+    image: postgres
+    restart: always
+    volumes:
+      - db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+  
