@@ -3,4 +3,8 @@
 .pytest_cache/
 __pycache__/
 coverage/
+
 .env
+.coverage
+pytest-coverage.txt
+pytest.xml

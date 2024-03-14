@@ -23,7 +23,7 @@ help: Makefile
 ## db: 💾 start a containerised database
 .PHONY: db
 db:
-	docker compose -p bi5importer up -d
+	docker compose -p bi5importer up -d && docker ps
 
 ## init: ⚙️
 .PHONY: init
@@ -47,4 +47,14 @@ run:
 .PHONY: test
 test:
 	COVERAGE_FILE=coverage/.coverage \
-	  pytest --cov=src --cov-report xml:coverage/cov.xml
+		pytest --cov=src \
+		--cov-report annotate:coverage/cov_annotate \
+		--cov-report html:coverage/cov_html \
+		--cov-report json:coverage/cov.json \
+		--cov-report lcov:coverage/cov.info \
+		--cov-report xml:coverage/cov.xml
+
+## lint: 🧪
+.PHONY: lint
+lint:
+	pylint ./src

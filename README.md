@@ -1,4 +1,9 @@
 # BI5 IMPORTER
+
+<!-- Pytest Coverage Comment:Begin -->
+<a href="https://github.com/milsanore/bi5importer/blob/master/README.md"><img alt="Coverage" src="https://img.shields.io/badge/Coverage-97%25-brightgreen.svg" /></a>
+<!-- Pytest Coverage Comment:End -->
+
 a tool for bulk importing bi5 files (tick data) into sql
 
 ## PREREQUISITES
@@ -16,8 +21,8 @@ a tool for bulk importing bi5 files (tick data) into sql
 `make run`
 
 ## TEST
-`make test`
-and google the "Coverage Gutters" vscode plugin for a pretty ui
+`make lint`
+`make test` (and google the "Coverage Gutters" vscode plugin for a pretty ui)
 
 ## INSTALL ADDITIONAL DEPENDENCIES
 1. `pip install some_new_package`
